@@ -8,6 +8,8 @@ Authors@R:
         email = "joshfjelstul@gmail.com",
         comment = c(ORCID = "0000-0002-9494-260X"))
 Description: An R package that contains data on European Union (EU) Member States.
+URL: https://github.com/jfjelstul/eumem
+Date: 2020-08-12
 License: GPL3
 Encoding: UTF-8
 LazyData: true
