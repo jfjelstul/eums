@@ -10,7 +10,7 @@ Authors@R:
 Description: An R package that contains data on European Union (EU) Member States.
 URL: https://github.com/jfjelstul/eumem
 Date: 2020-08-12
-License: GPL3
+License: MIT
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
