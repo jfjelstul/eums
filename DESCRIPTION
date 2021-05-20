@@ -1,16 +1,15 @@
-Package: eumem
-Title: Data on European Union (EU) Member States
-Version: 1.0.0
-Authors@R:
-  person(given = "Joshua C.",
-        family = "Fjelstul",
-        role = c("aut", "cre"),
-        email = "joshfjelstul@gmail.com",
-        comment = c(ORCID = "0000-0002-9494-260X"))
-Description: An R package that contains data on European Union (EU) Member States.
-URL: https://github.com/jfjelstul/eumem
-Date: 2020-08-12
-License: MIT
+Package: eums
+Title: The European Union Member State (EUMS) Database
+Version: 0.1.0.9000
+Authors@R: person(given = "Joshua C.",
+	   family = "Fjelstul",
+     	   role = c("aut", "cre"),
+    	   email = "joshfjelstul@gmail.com",
+    	   comment = c(ORCID = "0000-0002-9494-260X"))
+Description: This package procides access to the European Union Member State (EUMS) Database by Joshua Fjelstul, Ph.D.
+URL: https://github.com/jfjelstul/eums
+Date: 2021-05-20
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
