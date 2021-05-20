@@ -1,6 +1,6 @@
 # eums
 
-An `R` package for the European Union Member States (EUMS) Database. The database contains various data on EU member states, including variables about accession, the political system of the member state, participation in the European Economic and Monetary Union (EMU) and the Schengen Area, legal obligations and opt-outs, and membership in other international organizations. The database also includes data on qualified majority vote (QMV) weights and a template for cross-sectional time-series (CSTS) data on member states. 
+An `R` package for the European Union Member States (EUMS) Database. The database contains data on EU member states, including information about accession, the political system of the member state, participation in the European Economic and Monetary Union (EMU) and the Schengen Area, legal obligations and opt-outs, and membership in other international organizations. The database also includes data on qualified majority vote (QMV) weights and templates for cross-sectional time-series (CSTS) data and directed dyad-year (DDY) data on member states. 
 
 ## Installation
 
