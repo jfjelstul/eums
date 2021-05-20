@@ -1,0 +1,90 @@
+key_id,dataset_id,dataset,variable_id,variable,type,description
+1,1,member_states,1,key_id,numeric,An ID number that uniquely identifies each observation.
+2,1,member_states,2,member_state_id,numeric,An ID number that uniquely identifies each member state.
+3,1,member_states,3,member_state,string,The name of the member sate.
+4,1,member_states,4,member_state_code,string,A two-letter code assigned to each member state by the Commission.
+5,1,member_states,5,iso_alpha_2_code,string,The ISO 2-letter code for the member state.
+6,1,member_states,6,iso_alpha_3_code,string,The ISO 3-letter code for the member state.
+7,1,member_states,7,languages,string,"The official languages of the member state. If a member states has more than one official language, they are listed, separated by a comma. "
+8,1,member_states,8,accession_date,date,The date that the member state acceded to the EU in the format {YYYY-MM-DD}.
+9,1,member_states,9,accession_year,numeric,The year that the member state acceded to the EU.
+10,1,member_states,10,current_member,dummy,A dummy variable indicating whether the member state is currently a member of the EU. Coded {1} if the member state is currently a member and {0} otherwise.
+11,1,member_states,11,exit_date,date,"If the member state is no longer a member of the EU, the date that the member state exited the EU in the format {YYYY-MM-DD}. Coded {NA} if not applicable. "
+12,1,member_states,12,exit_year,numeric,"If the member state is no longer a member of the EU, the year that the member state exited to the EU. Coded {NA} if not applicable. "
+13,1,member_states,13,wave_1,dummy,A dummy variable indicating whether the member state was a founding member of the EU. Coded {1} if the member state was a founding member and {0} otherwise. 
+14,1,member_states,14,wave_2,dummy,A dummy variable indicating whether the member state was part of the second accession wave (1973). Coded {1} if the member state was part of the second wave and {0} otherwise.
+15,1,member_states,15,wave_3,dummy,A dummy variable indicating whether the member state was part of the third accession wave (1981). Coded {1} if the member state was part of the third wave and {0} otherwise.
+16,1,member_states,16,wave_4,dummy,A dummy variable indicating whether the member state was part of the fourth accession wave (1986). Coded {1} if the member state was part of the fourth wave and {0} otherwise.
+17,1,member_states,17,wave_5,dummy,A dummy variable indicating whether the member state was part of the fifth accession wave (1995). Coded {1} if the member state was part of the fifth wave and {0} otherwise.
+18,1,member_states,18,wave_6,dummy,A dummy variable indicating whether the member state was part of the sixth accession wave (2004). Coded {1} if the member state was part of the sixth wave and {0} otherwise.
+19,1,member_states,19,wave_7,dummy,A dummy variable indicating whether the member state was part of the seventh accession wave (2007). Coded {1} if the member state was part of the seventh wave and {0} otherwise.
+20,1,member_states,20,wave_8,dummy,A dummy variable indicating whether the member state was part of the eighth accession wave (2013). Coded {1} if the member state was part of the eighth wave and {0} otherwise.
+21,1,member_states,21,eu_15,dummy,"A dummy variable indicating whether the member state is part of the EU15, which refers to the members that joined prior to the 2004 expansion into Central and Eastern Europe. Coded {1} if the member state is part of the EU15 and {0} otherwise. "
+22,1,member_states,22,eu_19,dummy,"A dummy variable indicating whether the member state is part of the EU19, which refers to the members of the Eurozone. Coded {1} if the member state is part of the EU19 and {0} otherwise. "
+23,1,member_states,23,eu_10,dummy,"A dummy variable indicating whether the member state is part of the EU10, which refers to the members that joined  as part of the 2004 expansion into Central and Eastern Europe (including Cyprus and Malta). Coded {1} if the member state is part of the EU10 and {0} otherwise. "
+24,1,member_states,24,eu_11,dummy,"A dummy variable indicating whether the member state is part of the EU11, which refers to the Central and Eastern European member states that joined between 2004 and 2013 (excluding Cyprus and Malta). Coded {1} if the member state is part of the EU11 and {0} otherwise. "
+25,1,member_states,25,eu_27_old,dummy,"A dummy variable indicating whether the member state is part of the EU27 under the original meaning, which refers to all member states except Croatia. Coded {1} if the member state is part of the EU27 and {0} otherwise. "
+26,1,member_states,26,eu_27_new,dummy,"A dummy variable indicating whether the member state is part of the EU27 under the new meaning, which refers to all member states except the United Kingdom. Coded {1} if the member state is part of the EU27 and {0} otherwise. "
+27,1,member_states,27,eu_28,dummy,"A dummy variable indicating whether the member state is part of the EU28, which refers to all member states. Coded {1} if the member state is part of the EU28 and {0} otherwise. "
+28,1,member_states,28,political_system,string,"The political system of the member state. Possible values include, in decreasing order of frequency: {unitary parliamentary republic}, {unitary parliamentary constitutional monarchy}, {unitary semi-presidential republic}, {federal parliamentary republic}, {federal parliamentary constitutional monarchy}, and {unitary presidential republic}.  "
+29,1,member_states,29,federal,dummy,A dummy variable indicating whether the member state has a federal system. Coded {1} if the member state has a federal system and {0} otherwise.
+30,1,member_states,30,unitary,dummy,A dummy variable indicating whether the member state has a unitary system. Coded {1} if the member state has a unitary system and {0} otherwise.
+31,1,member_states,31,parliamentary,dummy,A dummy variable indicating whether the member state has a parliamentary system. Coded {1} if the member state has a parliamentary system and {0} otherwise.
+32,1,member_states,32,presidential,dummy,A dummy variable indicating whether the member state has a presidential system. Coded {1} if the member state has a presidential system and {0} otherwise.
+33,1,member_states,33,semi_presidential,dummy,A dummy variable indicating whether the member state has a semi-presidential system. Coded {1} if the member state has a semi-presidential system and {0} otherwise.
+34,1,member_states,34,republic,dummy,A dummy variable indicating whether the member state is a republic. Coded {1} if the member state is a republic and {0} otherwise.
+35,1,member_states,35,constitutional_monarchy,dummy,A dummy variable indicating whether the member state is a constitutional monarchy. Coded {1} if the member state is a constitutional monarchy and {0} otherwise.
+36,1,member_states,36,emu,dummy,A dummy variable indicating whether the member state is a member of the European Economic and Monetary Union (EMU). Coded {1} if the member state is a member of the EMU and {0} otherwise. 
+37,1,member_states,37,emu_accession_date,date,"If the member state is a member of the EMU, the date that the member state acceded to the EMU in the format {YYYY-MM-DD}. Coded {NA} if not applicable."
+38,1,member_states,38,emu_accession_year,year,"If the member state is a member of the EMU, the year that the member state acceded to the EMU. Coded {NA} if not applicable."
+39,1,member_states,39,currency,string,The name of the currency used by the member state.
+40,1,member_states,40,pre_emu_currency,string,The name of the currency used by the member state before the creation of the EMU.
+41,1,member_states,41,schengen_area,dummy,A dummy variable indicating whether the member state is a member of the Schengen Area. Coded {1} if the member state is a member of the Schengen Area and {0} otherwise.
+42,1,member_states,42,schengen_date_signed,date,"If the member state is a member of the Schengen Area, the date that the member state signed the Schengen Agreement in the format {YYYY-MM-DD}. Coded {NA} if not applicable. "
+43,1,member_states,43,schengen_year_signed,year,"If the member state is a member of the Schengen Area, the year that the member state signed the Schengen Agreement. Coded {NA} if not applicable. "
+44,1,member_states,44,schengen_date_implemented,date,"If the member state is a member of the Schengen Area, the date that the member state implemented the Schengen Agreement in the format {YYYY-MM-DD}. Coded {NA} if not applicable. "
+45,1,member_states,45,schengen_year_implemented,year,"If the member state is a member of the Schengen Area, the year that the member state implemented the Schengen Agreement. Coded {NA} if not applicable. "
+46,1,member_states,46,emu_obligated,dummy,A dummy variable indicating whether the member state is legally obligated to join in the EMU in the future. Coded {1} if the member state has an obligation to join and {0} otherwise.
+47,1,member_states,47,schengen_obligated,dummy,A dummy variable indicating whether the member state is legally obligated to join in the Schengen Area in the future. Coded {1} if the member state has an obligation to join and {0} otherwise.
+48,1,member_states,48,emu_opt_out,dummy,A dummy variable indicating whether the member state has a legal opt-out for the EMU. Coded {1} of the member state has an opt-out and {0} otherwise. 
+49,1,member_states,49,schengen_opt_out,dummy,A dummy variable indicating whether the member state has a legal opt-out for the Schengen Area. Coded {1} of the member state has an opt-out and {0} otherwise. 
+50,1,member_states,50,csdp_opt_out,dummy,A dummy variable indicating whether the member state has a legal opt-out for the Common Security and Defense Policy (CSDP). Coded {1} of the member state has an opt-out and {0} otherwise. 
+51,1,member_states,51,cfr_opt_out,dummy,A dummy variable indicating whether the member state has a legal opt-out for the Charter of Fundamental Rights (CFR). Coded {1} of the member state has an opt-out and {0} otherwise. 
+52,1,member_states,52,afsj_opt_out,dummy,"A dummy variable indicating whether the member state has a legal opt-out for the Area of Freedom, Security and Justice (AFSJ). Coded {1} of the member state has an opt-out and {0} otherwise. "
+53,1,member_states,53,nato,dummy,A dummy variable indicating whether the member state is also a member of the North Atlantic Treaty Organization (NATO). Coded {1} if the member state is a member and {0} otherwise.
+54,1,member_states,54,oecd,dummy,A dummy variable indicating whether the member state is also a member of the Organization for Economic Cooperation and Development (OECD). Coded {1} if the member state is a member and {0} otherwise.
+55,1,member_states,55,benelux_union,dummy,A dummy variable indicating whether the member state is also a member of the Benelux Union. Coded {1} if the member state is a member and {0} otherwise.
+56,1,member_states,56,nordic_council,dummy,A dummy variable indicating whether the member state is also a member of the Nordic Council. Coded {1} if the member state is a member and {0} otherwise.
+57,1,member_states,57,baltic_assembly,dummy,A dummy variable indicating whether the member state is also a member of the Baltic Assembly. Coded {1} if the member state is a member and {0} otherwise.
+58,1,member_states,58,visegrad_group,dummy,A dummy variable indicating whether the member state is also a member of the Visegrad Group. Coded {1} if the member state is a member and {0} otherwise.
+59,2,member_states_csts,1,key_id,numeric,An ID number that uniquely identifies each observation.
+60,2,member_states_csts,2,year,numeric,The year.
+61,2,member_states_csts,3,member_state_id,numeric,An ID number that uniquely identifies each member state.
+62,2,member_states_csts,4,member_state,string,The name of the member sate.
+63,2,member_states_csts,5,member_state_code,string,A two-letter code assigned to each member state by the Commission.
+64,2,member_states_csts,6,years_as_member,numeric,"The number of years that the member state has been a member, with the first year of membership coded {1}."
+65,3,member_states_ddy,1,key_id,numeric,An ID number that uniquely identifies each observation.
+66,3,member_states_ddy,2,year,numeric,The year.
+67,3,member_states_ddy,3,from_member_state_id,numeric,An ID number that uniquely identifies each member state.
+68,3,member_states_ddy,4,from_member_state,string,The name of the first member state in the directed dyad. 
+69,3,member_states_ddy,5,from_member_state_code,string,A two-letter code assigned to each member state by the Commission.
+70,3,member_states_ddy,6,to_member_state_id,numeric,An ID number that uniquely identifies each member state.
+71,3,member_states_ddy,7,to_member_state,string,The name of the second member state in the directed dyad.
+72,3,member_states_ddy,8,to_member_state_code,string,A two-letter code assigned to each member state by the Commission.
+73,4,qmv_weights,1,key_id,numeric,An ID number that uniquely identifies each observation.
+74,4,qmv_weights,2,period,numeric,An ID number that uniquely identifies each period.
+75,4,qmv_weights,3,start_date,date,The start day of the period in the format {YYYY-MM-DD}.
+76,4,qmv_weights,4,start_year,numeric,The start year of the period.
+77,4,qmv_weights,5,start_month,numeric,The start month of the period.
+78,4,qmv_weights,6,start_day,numeric,The start day of the period.
+79,4,qmv_weights,7,end_date,date,The end date of the period in the format {YYYY-MM-DD}.
+80,4,qmv_weights,8,end_year,numeric,The end year of the period.
+81,4,qmv_weights,9,end_month,numeric,The end month of the period.
+82,4,qmv_weights,10,end_day,numeric,The end day of the period.
+83,4,qmv_weights,11,count_member_states,numeric,The number of member states.
+84,4,qmv_weights,12,member_state_id,numeric,An ID number that uniquely identifies each member state. 
+85,4,qmv_weights,13,member_state,string,The name of the member state.
+86,4,qmv_weights,14,member_state_code,string,A two-letter code assigned to each member state by the Commission.
+87,4,qmv_weights,15,votes,numeric,The number of votes allocated to each member state during the period.
+88,4,qmv_weights,16,total_votes,numeric,The total number of votes allocated across all member states during the period.
+89,4,qmv_weights,17,normalized_weight,numeric,The normalized voting weight of the member state during the period. Calculated as the number of votes allocated to the member state divided by the total number of votes allocated to all member states.
