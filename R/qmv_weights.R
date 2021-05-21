@@ -5,13 +5,13 @@
 ################################################################################
 
 #' Qualified majority voting (QMV) weights
-#' 
+#'
 #' This dataset includes data on qualified majority voting (QMV) weights in
 #' the Council of the European Union. The total number of votes allocated
 #' across member states and the number of votes allocated to each member state
 #' have changed over time. This dataset tracks those changes and calculates
 #' the normalized voting weight for each member state for each period.
-#' 
+#'
 #' @format A data frame with 17 variables:
 #' \describe{
 #' \item{key_id}{Numeric. An ID number that uniquely identifies each
@@ -47,4 +47,3 @@
 ################################################################################
 # end R script
 ################################################################################
-

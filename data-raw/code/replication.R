@@ -63,8 +63,8 @@ member_states_csts$key_id <- 1:nrow(member_states_csts)
 
 # organize variables
 member_states_csts <- dplyr::select(
-  member_states_csts, 
-  key_id, year, 
+  member_states_csts,
+  key_id, year,
   member_state_id, member_state, member_state_code,
   years_as_member
 )
@@ -125,8 +125,8 @@ member_states_ddy$key_id <- 1:nrow(member_states_ddy)
 
 # organize variables
 member_states_ddy <- dplyr::select(
-  member_states_ddy, 
-  key_id, year, 
+  member_states_ddy,
+  key_id, year,
   from_member_state_id, from_member_state, from_member_state_code,
   to_member_state_id, to_member_state, to_member_state_code,
 )
@@ -176,7 +176,7 @@ qmv_weights$key_id <- 1:nrow(qmv_weights)
 # organize variables
 qmv_weights <- dplyr::select(
   qmv_weights,
-  key_id, period, 
+  key_id, period,
   start_date, start_year, start_month, start_day,
   end_date, end_year, end_month, end_day,
   count_member_states,

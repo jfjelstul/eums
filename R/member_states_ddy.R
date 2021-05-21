@@ -5,10 +5,10 @@
 ################################################################################
 
 #' Directed dyad-year template
-#' 
+#'
 #' This dataset is a template for directed dyad-year data on member states.
 #' There is one observation per directed dyad per year.
-#' 
+#'
 #' @format A data frame with 8 variables:
 #' \describe{
 #' \item{key_id}{Numeric. An ID number that uniquely identifies each
@@ -32,4 +32,3 @@
 ################################################################################
 # end R script
 ################################################################################
-
