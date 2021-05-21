@@ -13,7 +13,7 @@ devtools::install_github("jfjelstul/eums")
 
 ## Documentation
 
-The codebook for the database is included as a `tibble` in the `R` package: `eums::codebook`. The same information is also available in the `R` documentation for each dataset. For example, you can see the codebook for the `eums::member_states` dataset by running `?eums::member_states`.
+The codebook for the database is included as a `tibble` in the `R` package: `eums::codebook`. The same information is also available in the `R` documentation for each dataset. For example, you can see the codebook for the `eums::member_states` dataset by running `?eums::member_states`. You can also read the documentation on the [package website](https://jfjelstul.github.io/eums/). 
 
 ## Citation
 
