@@ -5,10 +5,10 @@
 ################################################################################
 
 #' Cross-sectional time-series template
-#'
+#' 
 #' This dataset is a template for cross-sectional time-series data on member
 #' states. There is one observation per member state per year.
-#'
+#' 
 #' @format A data frame with 6 variables:
 #' \describe{
 #' \item{key_id}{Numeric. An ID number that uniquely identifies each
@@ -27,3 +27,4 @@
 ################################################################################
 # end R script
 ################################################################################
+

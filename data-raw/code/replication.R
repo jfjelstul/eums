@@ -8,7 +8,7 @@
 ##################################################
 
 # read in data
-member_states <- read.csv("data-raw/member-states-raw.csv", stringsAsFactors = FALSE)
+member_states <- read.csv("data-raw/member_states_raw.csv", stringsAsFactors = FALSE)
 
 # dates
 member_states$accession_date <- lubridate::ymd(member_states$accession_date)
@@ -139,7 +139,7 @@ save(member_states_ddy, file = "data/member_states_ddy.RData")
 ##################################################
 
 # read in data
-qmv_weights <- read.csv("data-raw/QMV-weights-raw.csv", stringsAsFactors = FALSE)
+qmv_weights <- read.csv("data-raw/qmv_weights_raw.csv", stringsAsFactors = FALSE)
 
 # merge in member state ID
 qmv_weights <- dplyr::left_join(
@@ -208,6 +208,36 @@ codebookr::document_data(
   author = "Joshua C. Fjelstul, Ph.D.",
   package = "eums"
 )
+
+##################################################
+# read in data
+##################################################
+
+load("data/member_states.RData")
+load("data/member_states_csts.RData")
+load("data/member_states_ddy.RData")
+load("data/qmv_weights.RData")
+load("data/codebook.RData")
+
+##################################################
+# build
+##################################################
+
+write.csv(member_states, "build/eums_member_states.csv", row.names = FALSE, quote = TRUE)
+write.csv(member_states_csts, "build/eums_member_states_csts.csv", row.names = FALSE, quote = TRUE)
+write.csv(member_states_ddy, "build/eums_member_states_ddy.csv", row.names = FALSE, quote = TRUE)
+write.csv(qmv_weights, "build/eums_qmv_weights.csv", row.names = FALSE, quote = TRUE)
+write.csv(codebook, "build/eums_codebook.csv", row.names = FALSE, quote = TRUE)
+
+##################################################
+# server
+##################################################
+
+write.csv(member_states, "server/eums_member_states.csv", row.names = FALSE, quote = TRUE, na = "\\N")
+write.csv(member_states_csts, "server/eums_member_states_csts.csv", row.names = FALSE, quote = TRUE, na = "\\N")
+write.csv(member_states_ddy, "server/eums_member_states_ddy.csv", row.names = FALSE, quote = TRUE, na = "\\N")
+write.csv(qmv_weights, "server/eums_qmv_weights.csv", row.names = FALSE, quote = TRUE, na = "\\N")
+write.csv(codebook, "server/eums_codebook.csv", row.names = FALSE, quote = TRUE, na = "\\N")
 
 ################################################################################
 # end R script

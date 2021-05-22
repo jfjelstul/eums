@@ -5,14 +5,14 @@
 ################################################################################
 
 #' Data on member states
-#'
+#' 
 #' This dataset includes data on European Union (EU) member states. There is
 #' one observation per member state. The dataset includes information about
 #' accession, the political system of the member state, participation in the
 #' European Economic and Monetary Union (EMU) and the Schengen Area, legal
 #' obligations and opt-outs, and membership in other international
 #' organizations.
-#'
+#' 
 #' @format A data frame with 58 variables:
 #' \describe{
 #' \item{key_id}{Numeric. An ID number that uniquely identifies each
@@ -198,3 +198,4 @@
 ################################################################################
 # end R script
 ################################################################################
+
