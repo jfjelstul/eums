@@ -36,14 +36,14 @@ key_id,dataset_id,dataset,variable_id,variable,type,description
 35,1,member_states,35,constitutional_monarchy,dummy,A dummy variable indicating whether the member state is a constitutional monarchy. Coded {1} if the member state is a constitutional monarchy and {0} otherwise.
 36,1,member_states,36,emu,dummy,A dummy variable indicating whether the member state is a member of the European Economic and Monetary Union (EMU). Coded {1} if the member state is a member of the EMU and {0} otherwise. 
 37,1,member_states,37,emu_accession_date,date,"If the member state is a member of the EMU, the date that the member state acceded to the EMU in the format {YYYY-MM-DD}. Coded {NA} if not applicable."
-38,1,member_states,38,emu_accession_year,year,"If the member state is a member of the EMU, the year that the member state acceded to the EMU. Coded {NA} if not applicable."
+38,1,member_states,38,emu_accession_year,numeric,"If the member state is a member of the EMU, the year that the member state acceded to the EMU. Coded {NA} if not applicable."
 39,1,member_states,39,currency,string,The name of the currency used by the member state.
 40,1,member_states,40,pre_emu_currency,string,The name of the currency used by the member state before the creation of the EMU.
 41,1,member_states,41,schengen_area,dummy,A dummy variable indicating whether the member state is a member of the Schengen Area. Coded {1} if the member state is a member of the Schengen Area and {0} otherwise.
 42,1,member_states,42,schengen_date_signed,date,"If the member state is a member of the Schengen Area, the date that the member state signed the Schengen Agreement in the format {YYYY-MM-DD}. Coded {NA} if not applicable. "
-43,1,member_states,43,schengen_year_signed,year,"If the member state is a member of the Schengen Area, the year that the member state signed the Schengen Agreement. Coded {NA} if not applicable. "
+43,1,member_states,43,schengen_year_signed,numeric,"If the member state is a member of the Schengen Area, the year that the member state signed the Schengen Agreement. Coded {NA} if not applicable. "
 44,1,member_states,44,schengen_date_implemented,date,"If the member state is a member of the Schengen Area, the date that the member state implemented the Schengen Agreement in the format {YYYY-MM-DD}. Coded {NA} if not applicable. "
-45,1,member_states,45,schengen_year_implemented,year,"If the member state is a member of the Schengen Area, the year that the member state implemented the Schengen Agreement. Coded {NA} if not applicable. "
+45,1,member_states,45,schengen_year_implemented,numeric,"If the member state is a member of the Schengen Area, the year that the member state implemented the Schengen Agreement. Coded {NA} if not applicable. "
 46,1,member_states,46,emu_obligated,dummy,A dummy variable indicating whether the member state is legally obligated to join in the EMU in the future. Coded {1} if the member state has an obligation to join and {0} otherwise.
 47,1,member_states,47,schengen_obligated,dummy,A dummy variable indicating whether the member state is legally obligated to join in the Schengen Area in the future. Coded {1} if the member state has an obligation to join and {0} otherwise.
 48,1,member_states,48,emu_opt_out,dummy,A dummy variable indicating whether the member state has a legal opt-out for the EMU. Coded {1} of the member state has an opt-out and {0} otherwise. 
