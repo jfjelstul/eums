@@ -3,7 +3,7 @@
 \docType{data}
 \name{member_states_ddy}
 \alias{member_states_ddy}
-\title{Directed dyad-year template}
+\title{Directed dyad-year data on member states}
 \format{
 A data frame with 8 variables:
 \describe{

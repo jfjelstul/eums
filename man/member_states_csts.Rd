@@ -3,7 +3,7 @@
 \docType{data}
 \name{member_states_csts}
 \alias{member_states_csts}
-\title{Cross-sectional time-series template}
+\title{Cross-sectional time-series data on member states}
 \format{
 A data frame with 6 variables:
 \describe{

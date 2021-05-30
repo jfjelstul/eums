@@ -3,7 +3,7 @@
 \docType{data}
 \name{qmv_weights}
 \alias{qmv_weights}
-\title{Qualified majority voting (QMV) weights}
+\title{Data on qualified majority voting (QMV) weights}
 \format{
 A data frame with 17 variables:
 \describe{

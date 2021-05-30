@@ -119,9 +119,9 @@ the member state is a member of the EMU and \code{0} otherwise. }
 \item{emu_accession_date}{Date. If the member state is a member of the EMU,
 the date that the member state acceded to the EMU in the format
 \code{YYYY-MM-DD}. Coded \code{NA} if not applicable.}
-\item{emu_accession_year}{Year. If the member state is a member of the EMU,
-the year that the member state acceded to the EMU. Coded \code{NA} if not
-applicable.}
+\item{emu_accession_year}{Numeric. If the member state is a member of the
+EMU, the year that the member state acceded to the EMU. Coded \code{NA} if
+not applicable.}
 \item{currency}{String. The name of the currency used by the member state.}
 \item{pre_emu_currency}{String. The name of the currency used by the member
 state before the creation of the EMU.}
@@ -131,16 +131,16 @@ is a member of the Schengen Area and \code{0} otherwise.}
 \item{schengen_date_signed}{Date. If the member state is a member of the
 Schengen Area, the date that the member state signed the Schengen Agreement
 in the format \code{YYYY-MM-DD}. Coded \code{NA} if not applicable. }
-\item{schengen_year_signed}{Year. If the member state is a member of the
+\item{schengen_year_signed}{Numeric. If the member state is a member of the
 Schengen Area, the year that the member state signed the Schengen
 Agreement. Coded \code{NA} if not applicable. }
 \item{schengen_date_implemented}{Date. If the member state is a member of
 the Schengen Area, the date that the member state implemented the Schengen
 Agreement in the format \code{YYYY-MM-DD}. Coded \code{NA} if not
 applicable. }
-\item{schengen_year_implemented}{Year. If the member state is a member of
-the Schengen Area, the year that the member state implemented the Schengen
-Agreement. Coded \code{NA} if not applicable. }
+\item{schengen_year_implemented}{Numeric. If the member state is a member
+of the Schengen Area, the year that the member state implemented the
+Schengen Agreement. Coded \code{NA} if not applicable. }
 \item{emu_obligated}{Dummy. A dummy variable indicating whether the member
 state is legally obligated to join in the EMU in the future. Coded \code{1}
 if the member state has an obligation to join and \code{0} otherwise.}

@@ -200,11 +200,40 @@ codebook <- dplyr::as_tibble(codebook)
 # save
 save(codebook, file = "data/codebook.RData")
 
+##################################################
+# variables
+##################################################
+
+# read in data
+variables <- read.csv("data-raw/documentation/eums_variables.csv", stringsAsFactors = FALSE)
+
+# convert to a tibble
+variables <- dplyr::as_tibble(variables)
+
+# save
+save(variables, file = "data/variables.RData")
+
+##################################################
+# datasets
+##################################################
+
+# read in data
+datasets <- read.csv("data-raw/documentation/eums_datasets.csv", stringsAsFactors = FALSE)
+
+# convert to a tibble
+datasets <- dplyr::as_tibble(datasets)
+
+# save
+save(datasets, file = "data/datasets.RData")
+
+##################################################
 # documentation
+##################################################
+
 codebookr::document_data(
   path = "R/",
-  codebook_file = "data-raw/codebook/codebook.csv",
-  markdown_file = "data-raw/codebook/descriptions.txt",
+  variables_file = "data-raw/documentation/eums_variables.csv",
+  datasets_file = "data-raw/documentation/eums_datasets.csv",
   author = "Joshua C. Fjelstul, Ph.D.",
   package = "eums"
 )
@@ -217,7 +246,8 @@ load("data/member_states.RData")
 load("data/member_states_csts.RData")
 load("data/member_states_ddy.RData")
 load("data/qmv_weights.RData")
-load("data/codebook.RData")
+load("data/variables.RData")
+load("data/datasets.RData")
 
 ##################################################
 # build
@@ -227,17 +257,8 @@ write.csv(member_states, "build/eums_member_states.csv", row.names = FALSE, quot
 write.csv(member_states_csts, "build/eums_member_states_csts.csv", row.names = FALSE, quote = TRUE)
 write.csv(member_states_ddy, "build/eums_member_states_ddy.csv", row.names = FALSE, quote = TRUE)
 write.csv(qmv_weights, "build/eums_qmv_weights.csv", row.names = FALSE, quote = TRUE)
-write.csv(codebook, "build/eums_codebook.csv", row.names = FALSE, quote = TRUE)
-
-##################################################
-# server
-##################################################
-
-write.csv(member_states, "server/eums_member_states.csv", row.names = FALSE, quote = TRUE, na = "\\N")
-write.csv(member_states_csts, "server/eums_member_states_csts.csv", row.names = FALSE, quote = TRUE, na = "\\N")
-write.csv(member_states_ddy, "server/eums_member_states_ddy.csv", row.names = FALSE, quote = TRUE, na = "\\N")
-write.csv(qmv_weights, "server/eums_qmv_weights.csv", row.names = FALSE, quote = TRUE, na = "\\N")
-write.csv(codebook, "server/eums_codebook.csv", row.names = FALSE, quote = TRUE, na = "\\N")
+write.csv(variables, "build/eums_variables.csv", row.names = FALSE, quote = TRUE)
+write.csv(datasets, "build/eums_datasets.csv", row.names = FALSE, quote = TRUE)
 
 ################################################################################
 # end R script
