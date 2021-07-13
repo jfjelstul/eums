@@ -7,21 +7,21 @@
 \format{
 A data frame with 8 variables:
 \describe{
-\item{key_id}{Numeric. An ID number that uniquely identifies each
+\item{key_id}{\code{numeric}. An ID number that uniquely identifies each
 observation.}
-\item{year}{Numeric. The year.}
-\item{from_member_state_id}{Numeric. An ID number that uniquely identifies
-each member state.}
-\item{from_member_state}{String. The name of the first member state in the
-directed dyad. }
-\item{from_member_state_code}{String. A two-letter code assigned to each
-member state by the Commission.}
-\item{to_member_state_id}{Numeric. An ID number that uniquely identifies
-each member state.}
-\item{to_member_state}{String. The name of the second member state in the
-directed dyad.}
-\item{to_member_state_code}{String. A two-letter code assigned to each
-member state by the Commission.}
+\item{year}{\code{numeric}. The year.}
+\item{from_member_state_id}{\code{numeric}. An ID number that uniquely
+identifies each member state.}
+\item{from_member_state}{\code{string}. The name of the first member state
+in the directed dyad. }
+\item{from_member_state_code}{\code{string}. A two-letter code assigned to
+each member state by the Commission.}
+\item{to_member_state_id}{\code{numeric}. An ID number that uniquely
+identifies each member state.}
+\item{to_member_state}{\code{string}. The name of the second member state
+in the directed dyad.}
+\item{to_member_state_code}{\code{string}. A two-letter code assigned to
+each member state by the Commission.}
 }
 }
 \usage{

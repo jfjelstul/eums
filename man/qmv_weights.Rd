@@ -7,33 +7,34 @@
 \format{
 A data frame with 17 variables:
 \describe{
-\item{key_id}{Numeric. An ID number that uniquely identifies each
+\item{key_id}{\code{numeric}. An ID number that uniquely identifies each
 observation.}
-\item{period}{Numeric. An ID number that uniquely identifies each period.}
-\item{start_date}{Date. The start day of the period in the format
+\item{period}{\code{numeric}. An ID number that uniquely identifies each
+period.}
+\item{start_date}{\code{date}. The start day of the period in the format
 \code{YYYY-MM-DD}.}
-\item{start_year}{Numeric. The start year of the period.}
-\item{start_month}{Numeric. The start month of the period.}
-\item{start_day}{Numeric. The start day of the period.}
-\item{end_date}{Date. The end date of the period in the format
+\item{start_year}{\code{numeric}. The start year of the period.}
+\item{start_month}{\code{numeric}. The start month of the period.}
+\item{start_day}{\code{numeric}. The start day of the period.}
+\item{end_date}{\code{date}. The end date of the period in the format
 \code{YYYY-MM-DD}.}
-\item{end_year}{Numeric. The end year of the period.}
-\item{end_month}{Numeric. The end month of the period.}
-\item{end_day}{Numeric. The end day of the period.}
-\item{count_member_states}{Numeric. The number of member states.}
-\item{member_state_id}{Numeric. An ID number that uniquely identifies each
-member state. }
-\item{member_state}{String. The name of the member state.}
-\item{member_state_code}{String. A two-letter code assigned to each member
-state by the Commission.}
-\item{votes}{Numeric. The number of votes allocated to each member state
-during the period.}
-\item{total_votes}{Numeric. The total number of votes allocated across all
-member states during the period.}
-\item{normalized_weight}{Numeric. The normalized voting weight of the
-member state during the period. Calculated as the number of votes allocated
-to the member state divided by the total number of votes allocated to all
-member states.}
+\item{end_year}{\code{numeric}. The end year of the period.}
+\item{end_month}{\code{numeric}. The end month of the period.}
+\item{end_day}{\code{numeric}. The end day of the period.}
+\item{count_member_states}{\code{numeric}. The number of member states.}
+\item{member_state_id}{\code{numeric}. An ID number that uniquely
+identifies each member state. }
+\item{member_state}{\code{string}. The name of the member state.}
+\item{member_state_code}{\code{string}. A two-letter code assigned to each
+member state by the Commission.}
+\item{votes}{\code{numeric}. The number of votes allocated to each member
+state during the period.}
+\item{total_votes}{\code{numeric}. The total number of votes allocated
+across all member states during the period.}
+\item{normalized_weight}{\code{numeric}. The normalized voting weight of
+the member state during the period. Calculated as the number of votes
+allocated to the member state divided by the total number of votes
+allocated to all member states.}
 }
 }
 \usage{

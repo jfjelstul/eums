@@ -15,183 +15,189 @@
 #' 
 #' @format A data frame with 58 variables:
 #' \describe{
-#' \item{key_id}{Numeric. An ID number that uniquely identifies each
+#' \item{key_id}{\code{numeric}. An ID number that uniquely identifies each
 #' observation.}
-#' \item{member_state_id}{Numeric. An ID number that uniquely identifies each
-#' member state.}
-#' \item{member_state}{String. The name of the member sate.}
-#' \item{member_state_code}{String. A two-letter code assigned to each member
-#' state by the Commission.}
-#' \item{iso_alpha_2_code}{String. The ISO 2-letter code for the member
+#' \item{member_state_id}{\code{numeric}. An ID number that uniquely
+#' identifies each member state.}
+#' \item{member_state}{\code{string}. The name of the member sate.}
+#' \item{member_state_code}{\code{string}. A two-letter code assigned to each
+#' member state by the Commission.}
+#' \item{iso_alpha_2_code}{\code{string}. The ISO 2-letter code for the member
 #' state.}
-#' \item{iso_alpha_3_code}{String. The ISO 3-letter code for the member
+#' \item{iso_alpha_3_code}{\code{string}. The ISO 3-letter code for the member
 #' state.}
-#' \item{languages}{String. The official languages of the member state. If a
-#' member states has more than one official language, they are listed,
+#' \item{languages}{\code{string}. The official languages of the member state.
+#' If a member states has more than one official language, they are listed,
 #' separated by a comma. }
-#' \item{accession_date}{Date. The date that the member state acceded to the
-#' EU in the format \code{YYYY-MM-DD}.}
-#' \item{accession_year}{Numeric. The year that the member state acceded to
-#' the EU.}
-#' \item{current_member}{Dummy. A dummy variable indicating whether the member
-#' state is currently a member of the EU. Coded \code{1} if the member state
-#' is currently a member and \code{0} otherwise.}
-#' \item{exit_date}{Date. If the member state is no longer a member of the EU,
-#' the date that the member state exited the EU in the format
+#' \item{accession_date}{\code{date}. The date that the member state acceded
+#' to the EU in the format \code{YYYY-MM-DD}.}
+#' \item{accession_year}{\code{numeric}. The year that the member state
+#' acceded to the EU.}
+#' \item{current_member}{\code{dummy}. A dummy variable indicating whether the
+#' member state is currently a member of the EU. Coded \code{1} if the member
+#' state is currently a member and \code{0} otherwise.}
+#' \item{exit_date}{\code{date}. If the member state is no longer a member of
+#' the EU, the date that the member state exited the EU in the format
 #' \code{YYYY-MM-DD}. Coded \code{NA} if not applicable. }
-#' \item{exit_year}{Numeric. If the member state is no longer a member of the
-#' EU, the year that the member state exited to the EU. Coded \code{NA} if not
-#' applicable. }
-#' \item{wave_1}{Dummy. A dummy variable indicating whether the member state
-#' was a founding member of the EU. Coded \code{1} if the member state was a
-#' founding member and \code{0} otherwise. }
-#' \item{wave_2}{Dummy. A dummy variable indicating whether the member state
-#' was part of the second accession wave (1973). Coded \code{1} if the member
-#' state was part of the second wave and \code{0} otherwise.}
-#' \item{wave_3}{Dummy. A dummy variable indicating whether the member state
-#' was part of the third accession wave (1981). Coded \code{1} if the member
-#' state was part of the third wave and \code{0} otherwise.}
-#' \item{wave_4}{Dummy. A dummy variable indicating whether the member state
-#' was part of the fourth accession wave (1986). Coded \code{1} if the member
-#' state was part of the fourth wave and \code{0} otherwise.}
-#' \item{wave_5}{Dummy. A dummy variable indicating whether the member state
-#' was part of the fifth accession wave (1995). Coded \code{1} if the member
-#' state was part of the fifth wave and \code{0} otherwise.}
-#' \item{wave_6}{Dummy. A dummy variable indicating whether the member state
-#' was part of the sixth accession wave (2004). Coded \code{1} if the member
-#' state was part of the sixth wave and \code{0} otherwise.}
-#' \item{wave_7}{Dummy. A dummy variable indicating whether the member state
-#' was part of the seventh accession wave (2007). Coded \code{1} if the member
-#' state was part of the seventh wave and \code{0} otherwise.}
-#' \item{wave_8}{Dummy. A dummy variable indicating whether the member state
-#' was part of the eighth accession wave (2013). Coded \code{1} if the member
-#' state was part of the eighth wave and \code{0} otherwise.}
-#' \item{eu_15}{Dummy. A dummy variable indicating whether the member state is
-#' part of the EU15, which refers to the members that joined prior to the 2004
-#' expansion into Central and Eastern Europe. Coded \code{1} if the member
-#' state is part of the EU15 and \code{0} otherwise. }
-#' \item{eu_19}{Dummy. A dummy variable indicating whether the member state is
-#' part of the EU19, which refers to the members of the Eurozone. Coded
-#' \code{1} if the member state is part of the EU19 and \code{0} otherwise. }
-#' \item{eu_10}{Dummy. A dummy variable indicating whether the member state is
-#' part of the EU10, which refers to the members that joined as part of the
-#' 2004 expansion into Central and Eastern Europe (including Cyprus and
+#' \item{exit_year}{\code{numeric}. If the member state is no longer a member
+#' of the EU, the year that the member state exited to the EU. Coded \code{NA}
+#' if not applicable. }
+#' \item{wave_1}{\code{dummy}. A dummy variable indicating whether the member
+#' state was a founding member of the EU. Coded \code{1} if the member state
+#' was a founding member and \code{0} otherwise. }
+#' \item{wave_2}{\code{dummy}. A dummy variable indicating whether the member
+#' state was part of the second accession wave (1973). Coded \code{1} if the
+#' member state was part of the second wave and \code{0} otherwise.}
+#' \item{wave_3}{\code{dummy}. A dummy variable indicating whether the member
+#' state was part of the third accession wave (1981). Coded \code{1} if the
+#' member state was part of the third wave and \code{0} otherwise.}
+#' \item{wave_4}{\code{dummy}. A dummy variable indicating whether the member
+#' state was part of the fourth accession wave (1986). Coded \code{1} if the
+#' member state was part of the fourth wave and \code{0} otherwise.}
+#' \item{wave_5}{\code{dummy}. A dummy variable indicating whether the member
+#' state was part of the fifth accession wave (1995). Coded \code{1} if the
+#' member state was part of the fifth wave and \code{0} otherwise.}
+#' \item{wave_6}{\code{dummy}. A dummy variable indicating whether the member
+#' state was part of the sixth accession wave (2004). Coded \code{1} if the
+#' member state was part of the sixth wave and \code{0} otherwise.}
+#' \item{wave_7}{\code{dummy}. A dummy variable indicating whether the member
+#' state was part of the seventh accession wave (2007). Coded \code{1} if the
+#' member state was part of the seventh wave and \code{0} otherwise.}
+#' \item{wave_8}{\code{dummy}. A dummy variable indicating whether the member
+#' state was part of the eighth accession wave (2013). Coded \code{1} if the
+#' member state was part of the eighth wave and \code{0} otherwise.}
+#' \item{eu_15}{\code{dummy}. A dummy variable indicating whether the member
+#' state is part of the EU15, which refers to the members that joined prior to
+#' the 2004 expansion into Central and Eastern Europe. Coded \code{1} if the
+#' member state is part of the EU15 and \code{0} otherwise. }
+#' \item{eu_19}{\code{dummy}. A dummy variable indicating whether the member
+#' state is part of the EU19, which refers to the members of the Eurozone.
+#' Coded \code{1} if the member state is part of the EU19 and \code{0}
+#' otherwise. }
+#' \item{eu_10}{\code{dummy}. A dummy variable indicating whether the member
+#' state is part of the EU10, which refers to the members that joined as part
+#' of the 2004 expansion into Central and Eastern Europe (including Cyprus and
 #' Malta). Coded \code{1} if the member state is part of the EU10 and \code{0}
 #' otherwise. }
-#' \item{eu_11}{Dummy. A dummy variable indicating whether the member state is
-#' part of the EU11, which refers to the Central and Eastern European member
-#' states that joined between 2004 and 2013 (excluding Cyprus and Malta).
-#' Coded \code{1} if the member state is part of the EU11 and \code{0}
+#' \item{eu_11}{\code{dummy}. A dummy variable indicating whether the member
+#' state is part of the EU11, which refers to the Central and Eastern European
+#' member states that joined between 2004 and 2013 (excluding Cyprus and
+#' Malta). Coded \code{1} if the member state is part of the EU11 and \code{0}
 #' otherwise. }
-#' \item{eu_27_old}{Dummy. A dummy variable indicating whether the member
-#' state is part of the EU27 under the original meaning, which refers to all
-#' member states except Croatia. Coded \code{1} if the member state is part of
-#' the EU27 and \code{0} otherwise. }
-#' \item{eu_27_new}{Dummy. A dummy variable indicating whether the member
-#' state is part of the EU27 under the new meaning, which refers to all member
-#' states except the United Kingdom. Coded \code{1} if the member state is
+#' \item{eu_27_old}{\code{dummy}. A dummy variable indicating whether the
+#' member state is part of the EU27 under the original meaning, which refers
+#' to all member states except Croatia. Coded \code{1} if the member state is
 #' part of the EU27 and \code{0} otherwise. }
-#' \item{eu_28}{Dummy. A dummy variable indicating whether the member state is
-#' part of the EU28, which refers to all member states. Coded \code{1} if the
-#' member state is part of the EU28 and \code{0} otherwise. }
-#' \item{political_system}{String. The political system of the member state.
-#' Possible values include, in decreasing order of frequency: \code{unitary
-#' parliamentary republic}, \code{unitary parliamentary constitutional
-#' monarchy}, \code{unitary semi-presidential republic}, \code{federal
-#' parliamentary republic}, \code{federal parliamentary constitutional
-#' monarchy}, and \code{unitary presidential republic}. }
-#' \item{federal}{Dummy. A dummy variable indicating whether the member state
-#' has a federal system. Coded \code{1} if the member state has a federal
-#' system and \code{0} otherwise.}
-#' \item{unitary}{Dummy. A dummy variable indicating whether the member state
-#' has a unitary system. Coded \code{1} if the member state has a unitary
-#' system and \code{0} otherwise.}
-#' \item{parliamentary}{Dummy. A dummy variable indicating whether the member
-#' state has a parliamentary system. Coded \code{1} if the member state has a
-#' parliamentary system and \code{0} otherwise.}
-#' \item{presidential}{Dummy. A dummy variable indicating whether the member
-#' state has a presidential system. Coded \code{1} if the member state has a
-#' presidential system and \code{0} otherwise.}
-#' \item{semi_presidential}{Dummy. A dummy variable indicating whether the
-#' member state has a semi-presidential system. Coded \code{1} if the member
-#' state has a semi-presidential system and \code{0} otherwise.}
-#' \item{republic}{Dummy. A dummy variable indicating whether the member state
-#' is a republic. Coded \code{1} if the member state is a republic and
-#' \code{0} otherwise.}
-#' \item{constitutional_monarchy}{Dummy. A dummy variable indicating whether
-#' the member state is a constitutional monarchy. Coded \code{1} if the member
-#' state is a constitutional monarchy and \code{0} otherwise.}
-#' \item{emu}{Dummy. A dummy variable indicating whether the member state is a
-#' member of the European Economic and Monetary Union (EMU). Coded \code{1} if
-#' the member state is a member of the EMU and \code{0} otherwise. }
-#' \item{emu_accession_date}{Date. If the member state is a member of the EMU,
-#' the date that the member state acceded to the EMU in the format
+#' \item{eu_27_new}{\code{dummy}. A dummy variable indicating whether the
+#' member state is part of the EU27 under the new meaning, which refers to all
+#' member states except the United Kingdom. Coded \code{1} if the member state
+#' is part of the EU27 and \code{0} otherwise. }
+#' \item{eu_28}{\code{dummy}. A dummy variable indicating whether the member
+#' state is part of the EU28, which refers to all member states. Coded
+#' \code{1} if the member state is part of the EU28 and \code{0} otherwise. }
+#' \item{political_system}{\code{string}. The political system of the member
+#' state. Possible values include, in decreasing order of frequency:
+#' \code{unitary parliamentary republic}, \code{unitary parliamentary
+#' constitutional monarchy}, \code{unitary semi-presidential republic},
+#' \code{federal parliamentary republic}, \code{federal parliamentary
+#' constitutional monarchy}, and \code{unitary presidential republic}. }
+#' \item{federal}{\code{dummy}. A dummy variable indicating whether the member
+#' state has a federal system. Coded \code{1} if the member state has a
+#' federal system and \code{0} otherwise.}
+#' \item{unitary}{\code{dummy}. A dummy variable indicating whether the member
+#' state has a unitary system. Coded \code{1} if the member state has a
+#' unitary system and \code{0} otherwise.}
+#' \item{parliamentary}{\code{dummy}. A dummy variable indicating whether the
+#' member state has a parliamentary system. Coded \code{1} if the member state
+#' has a parliamentary system and \code{0} otherwise.}
+#' \item{presidential}{\code{dummy}. A dummy variable indicating whether the
+#' member state has a presidential system. Coded \code{1} if the member state
+#' has a presidential system and \code{0} otherwise.}
+#' \item{semi_presidential}{\code{dummy}. A dummy variable indicating whether
+#' the member state has a semi-presidential system. Coded \code{1} if the
+#' member state has a semi-presidential system and \code{0} otherwise.}
+#' \item{republic}{\code{dummy}. A dummy variable indicating whether the
+#' member state is a republic. Coded \code{1} if the member state is a
+#' republic and \code{0} otherwise.}
+#' \item{constitutional_monarchy}{\code{dummy}. A dummy variable indicating
+#' whether the member state is a constitutional monarchy. Coded \code{1} if
+#' the member state is a constitutional monarchy and \code{0} otherwise.}
+#' \item{emu}{\code{dummy}. A dummy variable indicating whether the member
+#' state is a member of the European Economic and Monetary Union (EMU). Coded
+#' \code{1} if the member state is a member of the EMU and \code{0} otherwise.
+#' }
+#' \item{emu_accession_date}{\code{date}. If the member state is a member of
+#' the EMU, the date that the member state acceded to the EMU in the format
 #' \code{YYYY-MM-DD}. Coded \code{NA} if not applicable.}
-#' \item{emu_accession_year}{Numeric. If the member state is a member of the
-#' EMU, the year that the member state acceded to the EMU. Coded \code{NA} if
-#' not applicable.}
-#' \item{currency}{String. The name of the currency used by the member state.}
-#' \item{pre_emu_currency}{String. The name of the currency used by the member
-#' state before the creation of the EMU.}
-#' \item{schengen_area}{Dummy. A dummy variable indicating whether the member
-#' state is a member of the Schengen Area. Coded \code{1} if the member state
-#' is a member of the Schengen Area and \code{0} otherwise.}
-#' \item{schengen_date_signed}{Date. If the member state is a member of the
-#' Schengen Area, the date that the member state signed the Schengen Agreement
-#' in the format \code{YYYY-MM-DD}. Coded \code{NA} if not applicable. }
-#' \item{schengen_year_signed}{Numeric. If the member state is a member of the
-#' Schengen Area, the year that the member state signed the Schengen
-#' Agreement. Coded \code{NA} if not applicable. }
-#' \item{schengen_date_implemented}{Date. If the member state is a member of
-#' the Schengen Area, the date that the member state implemented the Schengen
+#' \item{emu_accession_year}{\code{numeric}. If the member state is a member
+#' of the EMU, the year that the member state acceded to the EMU. Coded
+#' \code{NA} if not applicable.}
+#' \item{currency}{\code{string}. The name of the currency used by the member
+#' state.}
+#' \item{pre_emu_currency}{\code{string}. The name of the currency used by the
+#' member state before the creation of the EMU.}
+#' \item{schengen_area}{\code{dummy}. A dummy variable indicating whether the
+#' member state is a member of the Schengen Area. Coded \code{1} if the member
+#' state is a member of the Schengen Area and \code{0} otherwise.}
+#' \item{schengen_date_signed}{\code{date}. If the member state is a member of
+#' the Schengen Area, the date that the member state signed the Schengen
 #' Agreement in the format \code{YYYY-MM-DD}. Coded \code{NA} if not
 #' applicable. }
-#' \item{schengen_year_implemented}{Numeric. If the member state is a member
-#' of the Schengen Area, the year that the member state implemented the
+#' \item{schengen_year_signed}{\code{numeric}. If the member state is a member
+#' of the Schengen Area, the year that the member state signed the Schengen
+#' Agreement. Coded \code{NA} if not applicable. }
+#' \item{schengen_date_implemented}{\code{date}. If the member state is a
+#' member of the Schengen Area, the date that the member state implemented the
+#' Schengen Agreement in the format \code{YYYY-MM-DD}. Coded \code{NA} if not
+#' applicable. }
+#' \item{schengen_year_implemented}{\code{numeric}. If the member state is a
+#' member of the Schengen Area, the year that the member state implemented the
 #' Schengen Agreement. Coded \code{NA} if not applicable. }
-#' \item{emu_obligated}{Dummy. A dummy variable indicating whether the member
-#' state is legally obligated to join in the EMU in the future. Coded \code{1}
-#' if the member state has an obligation to join and \code{0} otherwise.}
-#' \item{schengen_obligated}{Dummy. A dummy variable indicating whether the
-#' member state is legally obligated to join in the Schengen Area in the
+#' \item{emu_obligated}{\code{dummy}. A dummy variable indicating whether the
+#' member state is legally obligated to join in the EMU in the future. Coded
+#' \code{1} if the member state has an obligation to join and \code{0}
+#' otherwise.}
+#' \item{schengen_obligated}{\code{dummy}. A dummy variable indicating whether
+#' the member state is legally obligated to join in the Schengen Area in the
 #' future. Coded \code{1} if the member state has an obligation to join and
 #' \code{0} otherwise.}
-#' \item{emu_opt_out}{Dummy. A dummy variable indicating whether the member
-#' state has a legal opt-out for the EMU. Coded \code{1} of the member state
-#' has an opt-out and \code{0} otherwise. }
-#' \item{schengen_opt_out}{Dummy. A dummy variable indicating whether the
-#' member state has a legal opt-out for the Schengen Area. Coded \code{1} of
-#' the member state has an opt-out and \code{0} otherwise. }
-#' \item{csdp_opt_out}{Dummy. A dummy variable indicating whether the member
-#' state has a legal opt-out for the Common Security and Defense Policy
+#' \item{emu_opt_out}{\code{dummy}. A dummy variable indicating whether the
+#' member state has a legal opt-out for the EMU. Coded \code{1} of the member
+#' state has an opt-out and \code{0} otherwise. }
+#' \item{schengen_opt_out}{\code{dummy}. A dummy variable indicating whether
+#' the member state has a legal opt-out for the Schengen Area. Coded \code{1}
+#' of the member state has an opt-out and \code{0} otherwise. }
+#' \item{csdp_opt_out}{\code{dummy}. A dummy variable indicating whether the
+#' member state has a legal opt-out for the Common Security and Defense Policy
 #' (CSDP). Coded \code{1} of the member state has an opt-out and \code{0}
 #' otherwise. }
-#' \item{cfr_opt_out}{Dummy. A dummy variable indicating whether the member
-#' state has a legal opt-out for the Charter of Fundamental Rights (CFR).
-#' Coded \code{1} of the member state has an opt-out and \code{0} otherwise. }
-#' \item{afsj_opt_out}{Dummy. A dummy variable indicating whether the member
-#' state has a legal opt-out for the Area of Freedom, Security and Justice
-#' (AFSJ). Coded \code{1} of the member state has an opt-out and \code{0}
+#' \item{cfr_opt_out}{\code{dummy}. A dummy variable indicating whether the
+#' member state has a legal opt-out for the Charter of Fundamental Rights
+#' (CFR). Coded \code{1} of the member state has an opt-out and \code{0}
 #' otherwise. }
-#' \item{nato}{Dummy. A dummy variable indicating whether the member state is
-#' also a member of the North Atlantic Treaty Organization (NATO). Coded
-#' \code{1} if the member state is a member and \code{0} otherwise.}
-#' \item{oecd}{Dummy. A dummy variable indicating whether the member state is
-#' also a member of the Organization for Economic Cooperation and Development
-#' (OECD). Coded \code{1} if the member state is a member and \code{0}
-#' otherwise.}
-#' \item{benelux_union}{Dummy. A dummy variable indicating whether the member
-#' state is also a member of the Benelux Union. Coded \code{1} if the member
-#' state is a member and \code{0} otherwise.}
-#' \item{nordic_council}{Dummy. A dummy variable indicating whether the member
-#' state is also a member of the Nordic Council. Coded \code{1} if the member
-#' state is a member and \code{0} otherwise.}
-#' \item{baltic_assembly}{Dummy. A dummy variable indicating whether the
-#' member state is also a member of the Baltic Assembly. Coded \code{1} if the
+#' \item{afsj_opt_out}{\code{dummy}. A dummy variable indicating whether the
+#' member state has a legal opt-out for the Area of Freedom, Security and
+#' Justice (AFSJ). Coded \code{1} of the member state has an opt-out and
+#' \code{0} otherwise. }
+#' \item{nato}{\code{dummy}. A dummy variable indicating whether the member
+#' state is also a member of the North Atlantic Treaty Organization (NATO).
+#' Coded \code{1} if the member state is a member and \code{0} otherwise.}
+#' \item{oecd}{\code{dummy}. A dummy variable indicating whether the member
+#' state is also a member of the Organization for Economic Cooperation and
+#' Development (OECD). Coded \code{1} if the member state is a member and
+#' \code{0} otherwise.}
+#' \item{benelux_union}{\code{dummy}. A dummy variable indicating whether the
+#' member state is also a member of the Benelux Union. Coded \code{1} if the
 #' member state is a member and \code{0} otherwise.}
-#' \item{visegrad_group}{Dummy. A dummy variable indicating whether the member
-#' state is also a member of the Visegrad Group. Coded \code{1} if the member
-#' state is a member and \code{0} otherwise.}
+#' \item{nordic_council}{\code{dummy}. A dummy variable indicating whether the
+#' member state is also a member of the Nordic Council. Coded \code{1} if the
+#' member state is a member and \code{0} otherwise.}
+#' \item{baltic_assembly}{\code{dummy}. A dummy variable indicating whether
+#' the member state is also a member of the Baltic Assembly. Coded \code{1} if
+#' the member state is a member and \code{0} otherwise.}
+#' \item{visegrad_group}{\code{dummy}. A dummy variable indicating whether the
+#' member state is also a member of the Visegrad Group. Coded \code{1} if the
+#' member state is a member and \code{0} otherwise.}
 #' }
 "member_states"
 
