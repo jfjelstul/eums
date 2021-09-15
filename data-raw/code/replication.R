@@ -257,7 +257,7 @@ codebookr::create_codebook(
   version_text = "1.0",
   footer_text = "The EUMS Database Codebook \\hspace{5pt} | \\hspace{5pt} Joshua C. Fjelstul, Ph.D.",
   author_names = "Joshua C. Fjelstul, Ph.D.",
-  theme_color = "#4D9FEB",
+  theme_color = "#4B94E6",
   heading_font_size = 30,
   subheading_font_size = 10,
   title_font_size = 16,
